@@ -3,5 +3,10 @@
 # Asks your user to enter any word and have it spelled out letter by letter.  
 # Look in the github README file for example output
 
-p "Enter a word for me to spell:"
 
+p "Enter a word for me to spell:"
+word = gets.chomp.upcase.split("")
+
+word.each do |the_letter|
+  p the_letter
+end

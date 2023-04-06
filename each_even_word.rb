@@ -4,3 +4,10 @@
 # Look in the github README file for example output
 
 p "Enter a list of words separated by spaces:"
+words = gets.chomp.split
+
+words.each do |the_word|
+  if the_word.split("").count.even?
+    p the_word
+  end
+end
